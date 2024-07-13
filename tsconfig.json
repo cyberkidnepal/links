@@ -4,15 +4,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -27,7 +21,9 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "es2015",
+    "downlevelIteration": true
   },
   "include": [
     "next-env.d.ts",
@@ -39,7 +35,5 @@
     "postcss.config.mjs",
     "eslint.config.mjs"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
